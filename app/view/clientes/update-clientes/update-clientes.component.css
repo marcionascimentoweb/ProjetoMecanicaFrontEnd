@@ -1,0 +1,156 @@
+/* CORES 
+LARANJA --> #F58634
+PRETO --> #373435
+BRANCO --> #FEFEFE
+CINZA (70%) --> #727376 */
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.updateCad{
+  max-width: 1004px;
+  display: flex;
+  background-color: black;
+  flex-direction: row;
+  justify-content: center;
+  }
+
+  .titulo{
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    color: #F58634;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .titulo h2{
+    text-align: center;
+    margin: 10px auto;
+    font-family: montserrat;
+    font-weight: normal;
+  }
+
+  .formUpdate{
+    background-color: #fff;
+    height: 800px;
+    margin: 0 auto;
+    font-family: montserrat;
+    font-size: 15px;
+    margin: 0 auto;
+    border: #F58634 5px solid;
+    justify-content: center;
+    position: relative;
+    }
+
+    
+.formUpdate input{
+  width: 100%;
+  background-color: #D2D3D5;
+  color: #727376;
+  font-size: 15px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  padding: 10px;
+  }
+
+.formUpdate label{
+  width: 100%;
+  margin-bottom: 20px;
+  border: #ccc solid 2px;
+  padding: 5px;
+  
+  }
+
+  .headerFormImg{
+      width: 640px;
+      position: relative;
+      display: block;
+      z-index: 3;
+      
+      }
+    
+    .efeitoForm{
+      width: 640px;
+      z-index: 2;
+      position: relative;
+      bottom: 65px;
+    }
+
+    .entrada{
+      bottom: 100px;
+      padding: 10px;
+      position: relative;
+    }
+
+    .sexo label {
+      width: 50%;
+         
+  }
+
+     .botao{
+      width: 100%;
+      height: 50px;
+      display: block;
+      margin: 0 auto;
+      } 
+
+    .botao button{
+    width: 150px;
+    height: 50px;
+    background-image: radial-gradient(rgb(231, 205, 170), #f58634);
+    color: black;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 10px;
+    }
+
+     /* RESPOSNSIVO */
+@media (max-width: 739px){
+
+  .headerFormImg{
+    width: 100%;
+    position: relative;
+    display: block;
+    z-index: 3;
+    
+    }
+
+    .entrada{
+      top: 1px;
+    }
+
+    .efeitoForm{
+      width: 100%;
+      z-index: 2;
+      position: relative;
+      bottom: 30px;
+      
+      }
+
+  .sexo label {
+    width: 100%;
+    box-shadow: 2px 2px 5px rgba(204, 204, 204, 0.37);
+    }
+
+    .sexo input[type=radio] {
+      display: inline-block;
+      margin-left: -100px;
+      }
+
+    .botao{
+      width: 50%;
+      display: block;
+      margin-bottom: 50px;
+      }
+
+    .botao button{
+      margin: 0px;
+      margin-bottom: 20px;
+      display: inline-block;
+      width: 50%;
+      
+    }
+}
+  

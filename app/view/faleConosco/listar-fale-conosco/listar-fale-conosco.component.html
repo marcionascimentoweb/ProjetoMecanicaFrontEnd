@@ -1,0 +1,33 @@
+
+<app-topo></app-topo>
+
+<div class="listar">
+  <h2>Lista Formulário Fale Conosco</h2>
+
+  <table class="table table-striped" *ngIf="faleConoscoLista">
+    <thead>
+      <th scope="col">Nome</th>
+      <th scope="col">Email</th>
+      <th scope="col">Telefone</th>
+      <th scope="col">Mensagem</th>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let item of faleConoscoLista">
+        <td>{{item.nome}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.tel}}</td>
+        <td>{{item.msg}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <article>
+    <div class="botao flex-item-12">
+      <button class="btn_voltar" (click)="voltar()">voltar</button>
+  </div>
+  </article>
+
+</div>
+
+<app-footer></app-footer>

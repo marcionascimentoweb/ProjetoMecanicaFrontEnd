@@ -1,0 +1,37 @@
+<app-topo></app-topo>
+
+<section class="delete flex">
+  
+  <article class="titulo flex-item-12">
+    <h2>DELETAR CLIENTE</h2>
+  </article>
+
+  <article class="confirmacao flex-item-12">
+    <h3>Deseja remover este Cliente?</h3> 
+  </article>
+
+  <article class="formDeletar flex-item-12">
+
+    <label>IdCliente: <strong>{{cliente.idCliente}}</strong></label>
+    <br><br>
+
+    <label>Nome: <strong>{{cliente.nome}}</strong></label>
+    <br><br>
+
+
+    <label>Data de Nascimento: <strong>{{cliente.dataNascimento}}</strong></label>
+    <br><br>
+
+
+    <label>sexo: <strong>{{cliente.sexo}}</strong></label>
+    <br><br>
+
+    
+    <button class="button" (click)="deletar()">Confirmar</button>
+    <button clas="button" (click)="cancelar()">Cancelar</button>
+
+  </article>
+
+</section>
+
+<app-footer></app-footer>

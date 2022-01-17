@@ -1,0 +1,54 @@
+<app-topo></app-topo>
+
+<section class="updateCad flex">
+
+  <article class="titulo flex-item-12">
+    <h2>Atualizar Clientes</h2> 
+  </article>
+
+  <article class="formUpdate flex-item-8">
+
+    <div class="headerForm">
+      <img class="headerFormImg" [src]="headerForm">
+    </div>
+  
+    <div class="efeitoForm">
+      <img class="efeitoForm" [src]="efeitoForm">
+    </div>
+
+    <div class="entrada">
+      <label>IdCliente: 
+        <input placeholder="Digite seu IdCliente" [(ngModel)]="request.idCliente">
+      </label><br><br>
+      
+      <label>Nome: 
+        <input placeholder="Digite seu nome" [(ngModel)]="request.nome">
+      </label><br><br>
+    
+      <label>Data de Nascimento: 
+        <input placeholder="Digite a data do seu nascimento" [(ngModel)]="request.dataNascimento">
+      </label><br><br>
+    
+      <div class="sexo">
+        <label>Sexo:<br> 
+          <label>Masculino: <input type="radio" name="sexo" value="Masculino" [(ngModel)]="request.sexo"></label>
+          <label>Feminino: <input type="radio" name="sexo" value="Feminino"   [(ngModel)]="request.sexo"></label>
+        </label>
+      </div>
+    
+      <div class="containerBotao flex-item-12">
+
+        <div class="botao flex-item-12">
+          <button class="btn_update" (click)="update()">Atualizar</button>
+          <button class="btn_listar" (click)="listar()">Listar</button>
+        </div>
+
+    </div>
+
+    </div>
+  </article>
+    
+</section>
+
+<app-footer></app-footer>
+

@@ -1,0 +1,23 @@
+
+
+.efeito1{
+  background-color:#727376;
+  
+}
+.efeito2{
+  background-color: #F58634;
+}
+
+@media (max-width: 739px){
+
+}
+
+
+/*GRID*/
+
+.flex {
+	max-width: 1004px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap; /* Quebra a linha */
+}

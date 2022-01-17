@@ -1,0 +1,45 @@
+
+<app-topo></app-topo>
+
+<section class="conteudo flex" >
+<!--Area total do conteudo-->
+  
+  <article class="crud flex-item-5">
+    <!--lado direito, botões-->
+    
+      <h3>CLIENTES</h3>
+      <!--Botões-->
+      <ul>
+        <li><button><a href="listarClientes">LISTAR</a></button></li>
+        <li><button><a href="cadastrarClientes">GRAVAR</a></button></li>
+        <li><button><a href="faleconoscolista">LISTAR FALE CONOSCO</a></button></li>
+        <li><button class="evento" (click)='logoutUsuario();'>LOGOUT</button></li>
+      </ul>
+    
+  </article>
+
+
+  <article class="mensagem flex-item-7">
+    
+    <div class="caixa">
+      <p class="texto1">"Só existe uma definição válida de negócio: "<br></p>
+      <p class="texto2">"criar um cliente."<br></p>
+      <p class="autor">"Peter Drucker"</p>
+    </div>
+    
+    <div class="boneco">
+      <img class="bonecoImg" [src]="boneco">
+    </div>
+
+    <div class="fundo">
+      <img class="fundoCinza" [src]="fundoCinza">
+      <img class="fundoLaranja" [src]="fundoLaranja">
+    </div>
+  
+  </article>
+
+</section>
+
+
+
+<app-footer></app-footer>

@@ -1,0 +1,142 @@
+/* FOLHA DE ESTILO */
+body, p, h1, h2, h3, ul, li {
+	margin: 0px;
+	padding: 0px;
+}
+
+* {
+	box-sizing: border-box;
+}
+/* CORES 
+LARANJA --> #F58634
+PRETO --> #373435
+BRANCO --> #FEFEFE
+CINZA (70%) --> #727376 */
+
+
+/* TOPO */
+
+header{
+	background-color: black;
+	}
+
+.header-topo{
+  z-index: 13;    
+	position: relative;
+	background-color: #727376;
+	
+}
+.carroDireito{
+	position: relative;
+	z-index: 12;
+	left: 160px;
+  
+}
+.carroEsquerdo{
+  float: left;
+  position: relative;
+  z-index: 13;
+}
+
+.logo{
+	float: left;
+	left: 70px;
+	top: 20px;
+  position: relative;
+  z-index: 11;
+}
+
+.estrada{
+  width: 1004px;
+  height: 120px;
+  position: absolute;
+  z-index: 1;
+	margin: 0 auto;
+	opacity: 0.8;
+}
+
+/* MENU */
+
+nav{
+	background-color: #F58634;
+	font-family:Novecento wide normal;
+	font-weight: bolder;
+	
+}
+.menu{
+	height: 40px;
+	text-align: center;
+}
+
+.menu-nav{
+	text-align: center;
+}
+
+.menu ul li{
+	display: inline-block;
+	}
+
+.menu li{
+	padding: 3px 20px;
+	margin-top: 3px;
+	margin: 0 center;
+	text-decoration: none;
+	}
+
+.menu li a{
+	display: block;
+	color: black;
+	}
+
+.menu li a:hover{
+/*border-top: 3px solid #727376;
+border-bottom: 3px solid #727376;*/
+color:  #F58634;
+background-color: black;
+padding: 5px 10px;
+}
+
+
+/* RESPOSNSIVO */
+@media (max-width: 739px){
+
+	.topo{
+	padding: 5px;	
+	}
+
+	.estrada{
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		margin: 0 auto;
+		opacity: 0.8;
+		position: relative;
+	}
+
+	.menu li a:hover{
+		color:  #F58634;
+		background-color: black;
+		padding: 0px 10px;
+		}
+
+	.menu-nav ul li{
+		float: none;
+		clear: both;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 12px;
+		padding: 1px;
+		margin: 4px;
+		}
+
+		.carroEsquerdo{
+			display: block;
+		}
+
+		.carroDireito{
+			left: 80px;			
+		}
+
+	
+
+}

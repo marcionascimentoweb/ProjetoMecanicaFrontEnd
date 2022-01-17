@@ -1,0 +1,68 @@
+/* CORES 
+LARANJA --> #F58634
+PRETO --> #373435
+BRANCO --> #FEFEFE
+CINZA (70%) --> #727376 */
+
+
+body{
+  margin: 0;
+  padding: 0;
+  
+}
+
+.conteudo{
+  top: 100px;
+  padding: 10px;
+}
+
+.conteudo{
+  max-width: 1004px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  }
+
+  .titulo{
+    width: 100%;
+    color: #F58634;
+    text-align: center;
+    margin: 0 auto;
+    font-family:Novecento wide normal;
+  }
+
+  .titulo h2{
+    text-align: center;
+    margin: 10px auto;
+    font-weight: normal;
+  }
+
+  .faleConosco{
+    font-family: montserrat;
+    font-weight: normal;
+  }
+
+  .form{
+    position: relative;
+    font-family:Novecento wide normal;
+  }
+
+  .form input, textarea{
+    border: 1px solid #F58634;
+    box-shadow: 3px 5px 5px rgba(50, 50, 50, 0.77);
+    font-family: montserrat;
+  }
+
+  .botao{
+    width: 40%;
+    height: 50px;
+    display: block;
+    top: 10px;
+    margin: 0 auto;
+    background-image: radial-gradient(rgb(231, 205, 170), #f58634);
+    }
+
+     .resposta{
+       color: #727376;
+     }
+

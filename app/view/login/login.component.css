@@ -1,0 +1,79 @@
+/* CORES 
+LARANJA --> #F58634
+PRETO --> #373435
+BRANCO --> #FEFEFE
+CINZA (70%) --> #727376 */
+
+/* LADO ESQUERDO */
+
+.login{
+  width: 90%;
+  height: 600px;
+  }
+
+.LDEsquerdo{
+  height: 480px;
+  margin-top: 60px;
+  }
+
+  .logo{
+    width: 70%;
+    position: relative;
+    z-index: 10;
+    top: 50%; /* Centralizando */
+    left: 50%; /* Centralizando */
+    transform: translate(-150px); /* Centralizando */
+    }
+
+  .pista{
+    width: 480px;
+    height: 480px;
+    position: absolute;
+    left: 25%;
+    z-index: 9;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+
+
+  /* LADO DIREITO */
+.LDDireito{
+  height: 480px;
+  margin-top: 60px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #eee;
+  }
+
+  h3{
+    text-align: center;
+    top: 10px;
+    position: relative;
+    color: #F58634;
+    font-family:Novecento wide normal;
+  }
+
+  .form{
+    position: relative;
+    top: 30px;
+    font-family:Novecento wide normal;
+  }
+
+  .form input{
+    border: 1px solid #F58634;
+    box-shadow: 3px 5px 5px rgba(50, 50, 50, 0.77);
+    font-family: montserrat;
+  }
+
+
+  .botao{
+      width: 40%;
+      height: 50px;
+      display: block;
+      margin: 0 auto;
+      font-family:Novecento wide normal;
+      background-image: radial-gradient(rgb(231, 205, 170), #f58634);
+    
+  }
+
+

@@ -1,0 +1,90 @@
+
+section{
+	max-width: 100%;
+	height: 100%;
+	background-color: #F58634;
+}
+
+.conteudo{
+  background-color: #F58634;
+  height: 280px;
+  display: flex; /* Utilizar o flex */
+  flex-direction: row; /* Alinhamento em Linhas */
+	flex-wrap: wrap; /* Quebra a linha */
+	justify-content: space-around;
+	align-items: center; /* Alinha os filhos no centro */
+	}
+
+
+li{
+	width: 110px;
+	height: 110px;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: #F58634;
+	box-shadow: 0px 0 0px 5px black;
+	vertical-align: auto;	
+	list-style: none;		
+	margin: 0 auto;	
+	margin-top: 20px;
+	}
+
+ul li img.servicosImg{
+	margin-left: 23px;
+	
+}
+
+ul li img.nossasLojasImg{
+	margin-left: 15px;
+	
+}
+
+ul li img.faleConoscoImg{
+	margin-top: 5px;
+	margin-left: 8px;
+	}
+
+	/*article*/
+
+	article p{
+		margin-top: 20px;
+		font-family:Novecento wide normal;
+		}
+
+		@media (max-width: 739px){
+			
+		section{
+			display: block;
+			height: 500px;
+			}
+		
+			article{
+				width: 400px;
+				height: 160px;
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			article p{
+				margin: 5px;
+			}
+
+			ul li img.servicosImg{
+				margin-left: 2px;
+								
+			}
+			
+			ul li img.nossasLojasImg{
+				margin-left: 2px;
+				
+			}
+			
+			ul li img.faleConoscoImg{
+				margin-top: 5px;
+				margin-left: 2px;
+				}
+	
+
+		}
+

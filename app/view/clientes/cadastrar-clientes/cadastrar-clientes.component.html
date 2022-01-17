@@ -1,0 +1,57 @@
+<app-topo></app-topo>
+
+<section class="cadastra flex">
+
+<article class="titulo flex-item-12">
+  <h2>Cadastrar Clientes</h2> 
+</article>
+
+
+<article class="formCadastrar form-group flex-item-8">
+
+  <div class="headerForm">
+    <img class="headerFormImg" [src]="headerForm">
+  </div>
+
+  <div class="efeitoForm">
+    <img class="efeitoForm" [src]="efeitoForm">
+  </div>
+  
+  <div class= "entrada">
+
+    <label>IdCliente:<br> <input placeholder="Digite Id do Cliente" [(ngModel)]="cliente.idCliente"></label>
+    <label>Nome:<br> <input placeholder="Digite seu nome" [(ngModel)]="cliente.nome"></label>
+    <label>Data de Nascimento:<br> <input placeholder="Digite a data do seu nascimento" [(ngModel)]="cliente.dataNascimento" data-js="dataNasc"></label>
+  
+    <div class="sexo">
+      <label>Sexo:<br> 
+        <label>Masculino: <input type="radio" name="sexo" value="Masculino" [(ngModel)]="cliente.sexo"></label>
+        <label>Feminino: <input type="radio" name="sexo" value="Feminino"   [(ngModel)]="cliente.sexo"></label>
+      </label>
+    </div>
+ 
+  </div>
+  
+  <div class="botao flex-item-12">
+    <button (click)="gravar()">Gravar</button>
+    <button class="btn_listar" (click)="listarAll()">Listar</button>
+  </div>
+
+
+  <div *ngIf="cliente">
+    <h3>Criado com Sucesso</h3>
+    <label>Id Cliente: {{cliente.idCliente}}</label>
+    <label>Nome: {{cliente.nome}}</label>
+    <label>Data de Nascimento: {{cliente.dataNascimento}}</label>
+    <label>Sexo: {{cliente.sexo}}</label>
+  </div>
+  
+</article>
+
+</section>
+
+<app-footer></app-footer>
+
+
+
+

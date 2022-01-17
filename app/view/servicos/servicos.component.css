@@ -1,0 +1,66 @@
+
+/* CORES 
+LARANJA --> #F58634
+PRETO --> #373435
+BRANCO --> #FEFEFE
+CINZA (70%) --> #727376 */
+
+
+.servico{
+  width: 100%;
+  background-color: white;
+  }
+
+h2{
+  text-align: center;
+  margin: 20px auto;
+  color: #F58634;
+  font-family:Novecento wide normal;
+  }
+
+
+.img{
+  width: 320px;
+  height: 145px;
+  }
+
+p{
+  width: 320px;
+  text-align: center;
+  font-weight: bolder;
+  color: black;
+  background-color: #F58634;
+  position: relative;
+  margin-bottom: 10px;
+  padding-top: 2px;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 739px){
+
+  .servico{
+    width: 100%;
+    height: 100%;
+    display: block;
+    }
+
+    .servicosCartaes{
+      width: 100%;
+      margin: 0 auto;
+      border: blue solid 2px;
+      }
+
+    .servicosCartoes::after, .servicosCartoes::before {
+      content: ‘’;
+      Display: table;
+      Clear: both;
+      }
+
+      
+    img, p{
+      margin-left: 75px;
+    }
+   
+}

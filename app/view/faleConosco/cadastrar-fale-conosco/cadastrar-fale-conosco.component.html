@@ -1,0 +1,92 @@
+<app-topo></app-topo>
+
+<section class="conteudo flex">
+
+  <article class="titulo flex-item-12">
+    <h2>Fale Conosco</h2>
+  </article>
+  
+   <article class="faleConosco flex-item-8">
+        <form class="form" [formGroup]='fg'>
+  
+    <!--Validação do Campo Nome-->  
+    <label>Nome:</label><br>
+    <input type="text" name="nome" id="nome" [(ngModel)]='faleConosco.nome'
+    class="form-control" formControlName="nome" placeholder="Digite seu nome"><br>
+    <!--Nome campo obrigatório-->
+    <div *ngIf='nome.invalid && nome.touched'>
+      <div [ngSwitch] = 'nome.errors !=null'>
+        <span *ngSwitchCase="nome.errors['required']">
+          Nome Obrigatório
+        </span>
+        <!--Nome campo minimo de 5 letras-->
+        <span *ngSwitchCase="nome.errors['minlength']!=null">
+          Nome não pode ter menos de 5 letras
+        </span>
+        <!--Nome campo maximo de 70 letras-->
+        <span *ngSwitchCase="nome.errors['maxlength']!=null">
+          Nome Grande limite em até 70 letras  
+        </span>
+        <!--Nome campo aceita apenas letras-->
+        <span *ngSwitchCase="nome.errors['pattern']!=null">
+          Nome fora da regra. Apenas letras a-z.
+        </span>
+      </div>
+    </div>
+
+    <!--Email campo obrigatório-->
+    <label>Email</label><br>
+    <input type="text" name="email" id="email" [(ngModel)] = 'faleConosco.email'
+    class="form-control" formControlName="email" placeholder="Digite seu email"><br>
+      <div *ngIf='email.invalid && email.touched'>
+        <div [ngSwitch] = 'email.errors !=null'>
+          <span *ngSwitchCase="email.errors['required']">
+            Email Obrigatório
+          </span>
+          <span *ngSwitchCase="email.errors['required']!=null">
+            Email fora do padrão 
+          </span>
+        </div>
+      </div>
+
+
+    <!--Email campo obrigatório-->
+    <label>Telefone</label><br>
+    <input type="text" name="tel" id="tel" [(ngModel)] = 'faleConosco.tel'
+    class="form-control" formControlName="tel" placeholder="Digite Telefone/Celular"><br>
+      <div *ngIf='tel.invalid && tel.touched'>
+        <div [ngSwitch] = 'tel.errors !=null'>
+          <span *ngSwitchCase="tel.errors['required']">
+            Telefone Obrigatório
+          </span>
+        </div>
+      </div>
+
+    <!--Email campo obrigatório-->
+    <label>Mensagem</label><br>
+    <textarea rows="4" name="msg" id="msg" [(ngModel)] = 'faleConosco.msg'
+    class="form-control" formControlName="msg" placeholder="Digite uma mensagem"></textarea><br>
+    <div *ngIf='msg.invalid && msg.touched'>
+      <div [ngSwitch] = 'msg.errors !=null'>
+        <span *ngSwitchCase="msg.errors['required']">
+          Mensagem Obrigatória
+        </span>
+      </div>
+    </div>
+
+    <button (click)='gravar();' [disabled]='fg.invalid' name="gravar" id="gravar" class="botao">Gravar</button>
+  </form>
+
+  <div class="resposta" *ngIf="faleConosco">
+    <label>Nome: {{faleConosco.nome}}</label><br>
+    <label>Email: {{faleConosco.email}}</label><br>
+    <label>Telefone: {{faleConosco.tel}}</label><br>
+    <label>Mensagem: {{faleConosco.msg}}</label><br>
+    <label><p>Preenchido com Sucesso</p></label>
+  </div>
+  </article>
+
+</section>
+
+<app-footer></app-footer>
+

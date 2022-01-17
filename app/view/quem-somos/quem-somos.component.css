@@ -1,0 +1,73 @@
+/* CORES 
+LARANJA --> #F58634
+PRETO --> #373435
+BRANCO --> #FEFEFE
+CINZA (70%) --> #727376 */
+
+/* QUEM SOMOS */
+
+h2{
+  text-align: center;
+  margin: 20px auto;
+  color: #F58634;
+  font-family:Novecento wide normal;
+  }
+
+.quemSomos{
+max-width: 1004px;
+display: flex;
+flex-direction: row;
+margin-top: 5px;
+}
+
+.fotoImg{
+  border: #F58634 solid;
+  margin: 10px 10px 10px 50px;
+  }
+
+.valores h3{
+  text-align: center;
+  color: #F58634;
+  font-family: montserrat;
+  margin-top: 10px;
+  }
+
+.valores p{
+  text-align: justify;
+  color: #727376;
+  padding: 5px;
+  font-size: 0,875em;
+  }
+
+.ladoDireito h3{
+  text-align: center;
+  color: #F58634;
+  font-family: montserrat;
+  margin-top: 10px;
+}
+
+.objetivo p{
+  text-align: justify;
+  color:#727376;
+  padding: 5px;
+  font-size: 0,875em;
+}
+
+
+@media (max-width: 739px){
+
+  .ladoEsquerdo{
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.foto{
+display: block;
+margin-left: 70px;
+}
+
+.ladoDireito{
+  width: 90%;
+}
+}

@@ -1,0 +1,35 @@
+<app-topo></app-topo>
+
+<div class="login flex">
+  
+    <!--COLUNA DO LADO ESQUERDO-->
+    <div class="LDEsquerdo flex-item-6">
+      <img class="logo" [src]="logo">
+      <img class="pista" [src]="pista">
+    </div>
+
+    <!--COLUNA DO LADO DIREITO-->
+    <div class="LDDireito flex-item-6">
+     
+      <h3>LOGIN</h3>
+      
+     <div class="form">
+        <label>Email:</label>
+        <input type="text" class="form-control" #email [(ngModel)]='usuario.email'
+        placeholder="Email" title='Digite seu email'><br/>
+      
+        <label>Senha:</label>
+        <input type="password" class="form-control" #senha [(ngModel)]='usuario.senha'
+        placeholder="Senha" title="Digite sua senha"><br/>
+           
+        <button type="button" (click)='loginUsuario();' class="botao">login</button>
+        
+      </div>
+      
+    </div>
+</div>
+
+<app-footer></app-footer>
+
+
+

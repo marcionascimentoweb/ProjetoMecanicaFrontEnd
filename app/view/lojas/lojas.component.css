@@ -1,0 +1,56 @@
+/* CORES 
+LARANJA --> #F58634
+PRETO --> #373435
+BRANCO --> #FEFEFE
+CINZA (70%) --> #727376 */
+
+
+h2{
+  text-align: center;
+  margin: 20px auto;
+  color: #F58634;
+  font-family:Novecento wide normal;
+  
+}
+
+h4{
+  text-align: center;
+  margin: 10px auto;
+  color: #F58634;
+  font-family: montserrat;
+}
+
+p{
+  text-align: center;
+  margin: 10px auto;
+  color: #373435;
+  font-family: montserrat;
+}
+
+img{
+  display: block;
+  margin: 20px auto; 
+  border: #F58634 solid 2px;
+  box-shadow: 2px 2px 5px 3px #727376 ;
+  
+}
+
+/* RESPOSNSIVO */
+@media (max-width: 739px){
+
+  .lojas h2{
+    background-color: black;
+    border-radius: 20px;
+  }
+
+  .matriz{
+    width: 100%;
+    background-color: #ddd;
+    margin: 0 auto;
+
+  }
+
+  .filial{
+    width: 90%;
+  }
+}
